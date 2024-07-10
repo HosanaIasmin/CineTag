@@ -2,9 +2,10 @@ import { Link } from 'react-router-dom';
 import logo from './logo.png';
 import styles from './Cabecalho.module.css';
 import CabecalhoLink from 'components/CabecalhoLink';
+import MovieSearch from 'components/MovieSearch/MovieSearch';
 
 
-function Cabecalho(){
+function Cabecalho({onSearch}){
     return (
        <header className={styles.cabecalho}>
         <Link to="./">
@@ -20,6 +21,7 @@ function Cabecalho(){
 
               
         </nav>
+        <MovieSearch onSearch={onSearch} />
        </header>
     )
 }
