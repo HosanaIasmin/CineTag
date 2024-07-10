@@ -3,13 +3,27 @@ import styles from './Favoritos.module.css';
 import Titulo from 'components/Titulo';
 import Card from 'components/Card';
 
-function Favoritos() {
+function Favoritos({ favorites, onFavorite}) {
     return (
         <>
         <Banner imagem="favoritos" />
-        <Titulo>Meus Favoritos</Titulo>
+        <Titulo className={styles.title}>Meus Favoritos</Titulo>
         <section className={styles.container}>
-            <Card id="2" titulo="Filme 2" capa="https://placehold.it/171x244" />
+                {favorites.length === 0 ? (
+                    <p>No favorites yet.</p>
+                ) : (
+                    favorites.map((video) => (
+                        <div key={video.id} className={styles.cardContainer}>
+                            <Card {...video} />
+                            <button
+                                onClick={() => onFavorite(video)}
+                                className={styles.favoriteButton}
+                            >
+                                Unfavorite
+                            </button>
+                        </div>
+                    ))
+                )}
             </section>
         </>
     )
