@@ -10,6 +10,8 @@ function AppRoutes(){
 
   const [searchQuery, setSearchQuery] = useState('');
   const [favorites, setFavorites] = useState([]);
+  const [ratings, setRatings] = useState({});
+
 
   const handleSearch = (query) => {
     setSearchQuery(query);
@@ -23,7 +25,15 @@ function AppRoutes(){
         return [...prevFavorites, movie];
       }
     });
-    }
+    };
+
+    const handleRatingChange = (movie, rating) => {
+      setRatings(prevRatings => ({
+        ...prevRatings,
+        [movie.id]: rating
+      }));
+    };
+  
 
     return(
         <BrowserRouter>
@@ -31,8 +41,19 @@ function AppRoutes(){
         <Container>
         <Routes>
             
-        <Route path="/" element={<Inicio searchQuery={searchQuery} favorites={favorites} onFavorite={handleFavorite} />} />
-          <Route path="/favoritos" element={<Favoritos favorites={favorites} onFavorite={handleFavorite} />} />
+        <Route path="/" element={<Inicio 
+            searchQuery={searchQuery} 
+            favorites={favorites} 
+            onFavorite={handleFavorite} 
+            ratings={ratings}
+            onRatingChange={handleRatingChange}
+          />} />
+          <Route path="/favoritos" element={<Favoritos 
+            favorites={favorites} 
+            onFavorite={handleFavorite} 
+            ratings={ratings}
+            onRatingChange={handleRatingChange}
+          />} />
             
          </Routes>
        </Container>

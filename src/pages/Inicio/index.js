@@ -5,11 +5,15 @@ import Titulo from "components/Titulo";
 import videos from 'json/db.json';
 import styles from './Inicio.module.css';
 
-function Inicio({searchQuery, favorites, onFavorite}) {
+function Inicio({searchQuery, favorites, onFavorite, ratings, onRatingChange}) {
 
     const filteredVideos = videos.filter((video) => 
         video.titulo.toLowerCase().includes(searchQuery.toLowerCase())
     );
+
+    const handleRating = (video, rating) => {
+        onRatingChange(video, rating);
+    }
 
     return (
         <>
@@ -22,6 +26,7 @@ function Inicio({searchQuery, favorites, onFavorite}) {
                 {filteredVideos.map((video) => {
                     // Verificar se o vídeo está nos favoritos
                     const isFavorite = favorites.includes(video);
+                    const rating = ratings[video.id] || 0;
 
                     return (
                         <div key={video.id} className={styles.cardContainer}>
@@ -32,13 +37,25 @@ function Inicio({searchQuery, favorites, onFavorite}) {
                             >
                                 {isFavorite ? 'Unfavorite' : 'Favorite'}
                             </button>
+
+                       <div className={styles.rating}>
+                                <span>Rating: {rating}</span>
+                                {[1, 2, 3, 4, 5].map(star => (
+                                    <button
+                                        key={star}
+                                        onClick={() => handleRating(video, star)}
+                                        className={styles.ratingButton}
+                                    >
+                                        {star <= rating ? '★' : '☆'}
+                                    </button>
+                                ))}
+                            </div>
                         </div>
                     );
                 })}
             </section>
-       
         </>
-    )
+    );
 }
 
-export default Inicio;
+export default Inicio
