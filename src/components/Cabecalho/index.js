@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from './logo.png';
+import logo from './logoFilmeFlix.png';
 import styles from './Cabecalho.module.css';
 import CabecalhoLink from 'components/CabecalhoLink';
 import MovieSearch from 'components/MovieSearch/MovieSearch';
@@ -9,7 +9,7 @@ function Cabecalho({onSearch}){
     return (
        <header className={styles.cabecalho}>
         <Link to="./">
-         <img src={logo} alt="Logo do site" />
+         <img className={styles.logo}src={logo} alt="Logo do site" />
          </Link>
         <nav>
            <CabecalhoLink url="./">
@@ -17,6 +17,9 @@ function Cabecalho({onSearch}){
            </CabecalhoLink>
               <CabecalhoLink url="./Favoritos">
                 Favoritos
+                </CabecalhoLink>
+                <CabecalhoLink url="./DetalhesFilme">
+                  Detalhes do Filme
                 </CabecalhoLink>
 
               

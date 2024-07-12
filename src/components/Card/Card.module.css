@@ -7,3 +7,8 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.capa {
+    width: 300px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}

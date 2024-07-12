@@ -3,6 +3,7 @@ import Inicio from "./pages/Inicio";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Rodape from "components/Rodape";
 import Favoritos from "./pages/Favoritos";
+import DetalhesFilme from "pages/DetalhesFilme";
 import Container from "components/Container";
 import { useState } from "react";
 
@@ -54,6 +55,16 @@ function AppRoutes(){
             ratings={ratings}
             onRatingChange={handleRatingChange}
           />} />
+
+          <Route 
+            path="/detalhes/:id" 
+            element={<DetalhesFilme 
+              favorites={favorites} 
+              onFavorite={handleFavorite} 
+              ratings={ratings}
+              onRatingChange={handleRatingChange}
+            />} 
+          />  
             
          </Routes>
        </Container>

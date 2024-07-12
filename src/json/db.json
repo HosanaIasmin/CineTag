@@ -1,26 +1,27 @@
 [
     {
         "id": 1,
-        "titulo": "O labirinto do Logcat",
-        "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img2.png",
+        "titulo": "Coringa",
+        "capa": "https://img.elo7.com.br/product/original/2A1A4B7/big-poster-filme-joker-coringa-joaquin-phoenix-tam-90x60-cm-nerd.jpg",
         "link": "https://www.youtube.com/embed/ypvGqZGJBls"
     },
     {
         "id": 2,
-        "titulo": "Um componente no espaço",
-        "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img1.png",
+        "titulo": "Thor: Ragnarok",
+        "descricao": "Aprenda a criar um componente React que pode ser utilizado em qualquer lugar do seu projeto.",
+        "capa": "https://img.elo7.com.br/product/original/2678674/big-poster-filme-marvel-thor-ragnarok-lo02-tamanho-90x60-cm-thor.jpg",
         "link": "https://www.youtube.com/embed/jK0uiQ1ZQQQ"
     },
     {
         "id": 3,
-        "titulo": "O poderoso JavaScript",
-        "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img4.png",
+        "titulo": "Top Gun: Ases Indomáveis",
+        "capa": "https://img.elo7.com.br/product/original/2692B10/big-poster-filme-top-gun-lo04-tamanho-90x60-cm-presente-geek.jpg",
         "link": "https://www.youtube.com/embed/N1BSG02z-Mw"
     },
     {
         "id": 4,
-        "titulo": "Dart, o Caçador de Andróides",
-        "capa": "https://cdn3.gnarususercontent.com.br/2802-react-praticando/img3.png",
+        "titulo": "Tintim: O Segredo do Licorne",
+        "capa": "https://3.bp.blogspot.com/-eczzTJYZxJk/TkSRRDDF-dI/AAAAAAAAF94/eOwgVVVpfBE/s1600/tintim_regular_poster_brazil.jpg",
         "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
     }
 ]
