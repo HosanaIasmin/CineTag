@@ -21,6 +21,9 @@ function Cabecalho({onSearch}){
                 <CabecalhoLink url="./DetalhesFilme">
                   Detalhes do Filme
                 </CabecalhoLink>
+                <CabecalhoLink url="./Adicionar">
+                Adicionar Filme
+           </CabecalhoLink>
 
               
         </nav>

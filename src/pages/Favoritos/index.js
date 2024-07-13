@@ -11,7 +11,7 @@ function Favoritos({ favorites, onFavorite, ratings, onRatingChange}) {
     return (
         <div>
         <Banner imagem="favoritos" />
-        <Titulo className={styles.title}>Meus Favoritos</Titulo>
+        <h1 className={styles.title}>Meus Favoritos</h1>
             <section className={styles.container}>
                 {favorites.length === 0 ? (
                     <p>No favorites yet.</p>

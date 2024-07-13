@@ -1,6 +1,11 @@
 .title {
     text-align: center;
+    font-size: 2em; /* Ajusta o tamanho da fonte */
+    color: #333; /* Ajusta a cor do texto */
+    font-weight: bold; /* Torna o texto em negrito */
+    margin-bottom: 20px; /* Adiciona uma margem inferior */
 }
+
 
 .container {
     display: flex;

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import videos from 'json/db.json';
 import styles from './DetalhesFilme.module.css';
 
-function DetalhesFilme({ favorites, onFavorite, ratings, onRatingChange }) {
+function DetalhesFilme() {
     const { id } = useParams();
     const video = videos.find(video => video.id.toString() === id);
 
@@ -11,33 +11,20 @@ function DetalhesFilme({ favorites, onFavorite, ratings, onRatingChange }) {
         return <div>Filme não encontrado</div>;
     }
 
-    const isFavorite = favorites.includes(video);
-    const rating = ratings[video.id] || 0;
-
-    const handleRating = (rating) => {
-        onRatingChange(video, rating);
-    };
 
     return (
         <div className={styles.container}>
-            <h1>{video.titulo}</h1>
-            <p>{video.descricao}</p>
-            <img src={video.capa} alt={video.titulo} />
-            <button onClick={() => onFavorite(video)}>
-                {isFavorite ? 'Unfavorite' : 'Favorite'}
-            </button>
-            <div className={styles.rating}>
-                <span>Rating: {rating}</span>
-                {[1, 2, 3, 4, 5].map(star => (
-                    <button
-                        key={star}
-                        onClick={() => handleRating(star)}
-                        className={styles.ratingButton}
-                    >
-                        {star <= rating ? '★' : '☆'}
-                    </button>
-                ))}
-            </div>
+            <h1   className={styles.title}>{video.titulo}</h1>
+            <p>Descrição:{video.descricao}</p>
+            <p>Ano: {video.ano}</p>
+            <p>Duração: {video.duracao}</p>
+            <p>Gênero: {video.genero}</p>
+            <p>Nota: {video.nota}</p>
+            <p>Diretor: {video.diretor}</p>
+            <p>Elenco: {video.elenco}</p>
+
+            <img src={video.capa} alt={video.titulo}className={styles.capa} />
+    
         </div>
     );
 }

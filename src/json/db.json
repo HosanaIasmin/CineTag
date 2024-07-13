@@ -1,27 +1,62 @@
 [
+    
     {
+    
         "id": 1,
         "titulo": "Coringa",
+        "ano": "2019",
+        "duracao": "2h 2min",
+        "nota": "8.5",
+        "genero": "Drama, Suspense",
+        "diretor": "Todd Phillips",
+        "elenco": "Joaquin Phoenix, Robert De Niro, Zazie Beetz",
+        "trailer ": "jfVTJm9NilA",
+        "descricao": "Em Coringa, Arthur Fleck (Joaquin Phoenix) trabalha como palhaço para uma agência de talentos e, toda semana, precisa comparecer a uma agente social, devido aos seus conhecidos problemas mentais. Após ser demitido, Fleck reage mal à gozação de três homens em pleno metrô e os mata. Os assassinatos iniciam um movimento popular contra a elite de Gotham City, da qual Thomas Wayne (Brett Cullen) é seu maior representante.",
         "capa": "https://img.elo7.com.br/product/original/2A1A4B7/big-poster-filme-joker-coringa-joaquin-phoenix-tam-90x60-cm-nerd.jpg",
         "link": "https://www.youtube.com/embed/ypvGqZGJBls"
     },
+
     {
         "id": 2,
         "titulo": "Thor: Ragnarok",
-        "descricao": "Aprenda a criar um componente React que pode ser utilizado em qualquer lugar do seu projeto.",
+        "ano": "2017",
+        "duracao": "2h 10min",
+        "nota": "7.9",
+        "genero": "Ação, Aventura, Comédia",
+        "diretor": "Taika Waititi",
+        "elenco": "Chris Hemsworth, Tom Hiddleston, Cate Blanchett",
+        "trailer ": "https://www.youtube.com/embed/jK0uiQ1ZQQQ",
+        "descricao": "Thor está preso do outro lado do universo. Ele precisa correr contra o tempo para voltar a Asgard e parar Ragnarok, a destruição de seu mundo, que está nas mãos da poderosa e implacável vilã Hela.",
         "capa": "https://img.elo7.com.br/product/original/2678674/big-poster-filme-marvel-thor-ragnarok-lo02-tamanho-90x60-cm-thor.jpg",
         "link": "https://www.youtube.com/embed/jK0uiQ1ZQQQ"
     },
     {
         "id": 3,
         "titulo": "Top Gun: Ases Indomáveis",
+        "ano": "1986",
+        "duracao": "1h 50min",
+        "nota": "6.9",
+        "genero": "Ação, Drama",
+        "diretor": "Tony Scott",
+        "elenco": "Tom Cruise, Kelly McGillis, Val Kilmer",
+        "trailer ": "https://www.youtube.com/embed/N1BSG02z-Mw",
+        "descricao": "Pete 'Maverick' Mitchell é um jovem piloto de caça da Marinha dos Estados Unidos que é selecionado para participar do curso Top Gun na Navy Fighter Weapons School, após seu companheiro abandonar a aviação de caça. Lá se envolve com Charlotte Blackwood, sua instrutora de astrofísica, e enfrenta um competidor à sua altura.",
         "capa": "https://img.elo7.com.br/product/original/2692B10/big-poster-filme-top-gun-lo04-tamanho-90x60-cm-presente-geek.jpg",
         "link": "https://www.youtube.com/embed/N1BSG02z-Mw"
     },
     {
         "id": 4,
         "titulo": "Tintim: O Segredo do Licorne",
+        "ano": "2011",
+        "duracao": "1h 47min",
+        "nota": "7.3",
+        "genero": "Animação, Aventura, Família",
+        "diretor": "Steven Spielberg",
+        "elenco": "Jamie Bell, Andy Serkis, Daniel Craig",
+        "trailer ": "https://www.youtube.com/embed/LLmBWjF6F8M",
+        "descricao": "O jovem repórter Tintim compra a miniatura de um galeão, mas logo ela é roubada. É o início de uma grande aventura, onde o destemido Tintim, seu cachorro Milu e o capitão Haddock enfrentam os mais diversos perigos em uma caça ao tesouro.",
         "capa": "https://3.bp.blogspot.com/-eczzTJYZxJk/TkSRRDDF-dI/AAAAAAAAF94/eOwgVVVpfBE/s1600/tintim_regular_poster_brazil.jpg",
         "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
     }
+
 ]

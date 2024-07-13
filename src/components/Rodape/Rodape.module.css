@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     background-color: var(--preto);
+    bottom: 0;
+    width:100%;
 }
 
 .rodape h2 {
