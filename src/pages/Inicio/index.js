@@ -24,7 +24,6 @@ function Inicio({searchQuery, favorites, onFavorite, ratings, onRatingChange}) {
             </Titulo>
             <section className={styles.container}>
                 {filteredVideos.map((video) => {
-                    // Verificar se o vídeo está nos favoritos
                     const isFavorite = favorites.includes(video);
                     const rating = ratings[video.id] || 0;
 

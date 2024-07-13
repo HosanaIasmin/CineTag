@@ -1,6 +1,5 @@
 import Banner from 'components/Banner';
 import styles from './Favoritos.module.css';
-import Titulo from 'components/Titulo';
 import Card from 'components/Card';
 
 function Favoritos({ favorites, onFavorite, ratings, onRatingChange}) {

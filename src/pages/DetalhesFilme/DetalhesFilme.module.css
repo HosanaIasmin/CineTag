@@ -1,24 +1,24 @@
 .container {
-    width: 80%; /* Ajusta a largura do card */
-    margin: 0 auto; /* Centraliza o card na página */
-    padding: 20px; /* Adiciona um padding ao card */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao card */
-    background-color: #fff; /* Define a cor de fundo do card */
-    border-radius: 10px; /* Arredonda os cantos do card */
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+    background-color: #fff;
+    border-radius: 10px; 
 }
 
 .capa {
-    width: 20%; /* Ajusta a largura da imagem para preencher o card */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 20%; 
+    height: auto; 
  
 }
 
 
 .title {
-    font-size: 2em; /* Ajusta o tamanho da fonte */
-    color: #333; /* Ajusta a cor do texto */
-    font-weight: bold; /* Torna o texto em negrito */
-    margin-bottom: 20px; /* Adiciona uma margem inferior */
+    font-size: 2em; 
+    color: #333; 
+    font-weight: bold;
+    margin-bottom: 20px; 
     display: flex;
 }
 
